@@ -2,12 +2,12 @@ name: build-image-push-to-ghcr
 
 on:
   schedule:
-  - cron: "13 */6 * * *"
+  - cron: "13 * * * *"
   push:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: sslscan-ci
+  IMAGE_NAME: pineal
 
 jobs:
   run:
